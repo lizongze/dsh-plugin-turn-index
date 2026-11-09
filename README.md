@@ -1,4 +1,4 @@
-# dsh-turn-index
+# dsh-plugin-turn-index
 
 为 DeepSeek Harness 会话右侧的「轮次导航」索引条追加一个**提问索引**：
 
@@ -35,20 +35,26 @@
 从本地目录安装到某个 profile：
 
 ```sh
-dsh plugin --profile web add file:D:\path\to\dsh-turn-index
+dsh plugin --profile web add file:D:\path\to\dsh-plugin-turn-index
+```
+
+发布到 npm 后也可以直接按包名安装：
+
+```sh
+dsh plugin --profile web add dsh-plugin-turn-index
 ```
 
 或在 Web UI 的「插件」管理中把该目录作为本地包安装。安装后刷新页面。
 
-Desktop 应用的 `desktop` profile 由 Electron 托管，CLI 不直接管理；可以用插件管理面板/宿主提供的安装入口，把 `file:D:\path\to\dsh-turn-index` 装进该 profile。
+Desktop 应用的 `desktop` profile 由 Electron 托管，CLI 不直接管理；可以用插件管理面板/宿主提供的安装入口，把 `file:D:\path\to\dsh-plugin-turn-index` 装进该 profile。
 
 ## 卸载
 
 ```sh
-dsh plugin --profile web remove dsh-turn-index
+dsh plugin --profile web remove dsh-plugin-turn-index
 ```
 
-或在插件管理里移除 `dsh-turn-index`。
+或在插件管理里移除 `dsh-plugin-turn-index`。
 
 ## 开发
 
@@ -56,7 +62,7 @@ dsh plugin --profile web remove dsh-turn-index
 - `lib/client.js`：浏览器半体，注册 `shell.overlay`、读取 `turnOutline`、定位索引条并处理跳转。
 - `cordis.patch.yml`：bundle patch，插入 Host row。
 
-改完 `lib/client.js` 后同步到 profile 的 `node_modules/dsh-turn-index/`，再刷新页面（生产模式下客户端模块不是热更新）。
+改完 `lib/client.js` 后同步到 profile 的 `node_modules/dsh-plugin-turn-index/`，再刷新页面（生产模式下客户端模块不是热更新）。
 
 ## 兼容性说明
 
