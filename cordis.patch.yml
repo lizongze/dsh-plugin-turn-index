@@ -1,0 +1,6 @@
+# dsh-turn-index bundle patch: insert the plugin's (no-op) Host half.
+# The browser half is discovered from this package's `dsh.client` declaration
+# and contributes the question-index overlay into `shell.overlay`.
+- insert:
+    - id: dsh-turn-index
+      name: 'dsh-turn-index'
