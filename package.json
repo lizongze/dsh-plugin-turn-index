@@ -16,6 +16,14 @@
     "README.md",
     "package.json"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizongze/dsh-plugin-turn-index.git"
+  },
+  "homepage": "https://github.com/lizongze/dsh-plugin-turn-index#readme",
+  "bugs": {
+    "url": "https://github.com/lizongze/dsh-plugin-turn-index/issues"
+  },
   "keywords": [
     "dsh",
     "dsh-plugin",
