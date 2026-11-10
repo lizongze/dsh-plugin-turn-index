@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugin-turn-index",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "为会话右侧的轮次导航追加提问索引：展开全部提问、搜索过滤，点击即可跳转。在右侧索引列表底部增加展开箭头。",
   "type": "module",
   "main": "lib/index.js",
