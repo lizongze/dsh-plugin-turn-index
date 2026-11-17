@@ -36,21 +36,27 @@
 
 要求 DSH `0.2.x`（Web / Desktop 的客户端都适用）。
 
-从本地目录安装到某个 profile：
+### 方式一：官方 App 里点两下
 
-```sh
-dsh plugin --profile web add file:D:\path\to\dsh-plugin-turn-index
-```
+打开 DSH 官方 App，点左上角 **插件 → 添加插件**，输入包名 `dsh-plugin-turn-index` 确认即可，装完刷新页面。
 
-发布到 npm 后也可以直接按包名安装：
+### 方式二：命令行
+
+按包名从 npm 安装：
 
 ```sh
 dsh plugin --profile web add dsh-plugin-turn-index
 ```
 
-或在 Web UI 的「插件」管理中把该目录作为本地包安装。安装后刷新页面。
+本地目录安装（开发调试时用）：
 
-Desktop 应用的 `desktop` profile 由 Electron 托管，CLI 不直接管理；可以用插件管理面板/宿主提供的安装入口，把 `file:D:\path\to\dsh-plugin-turn-index` 装进该 profile。
+```sh
+dsh plugin --profile web add file:D:\path\to\dsh-plugin-turn-index
+```
+
+也可以在 Web UI 的「插件」管理里把该目录作为本地包安装，装完刷新页面。
+
+Desktop 应用的 `desktop` profile 由 Electron 托管，CLI 不直接管理；用插件管理面板/宿主提供的安装入口，把 `file:D:\path\to\dsh-plugin-turn-index` 装进该 profile。
 
 ## 卸载
 
