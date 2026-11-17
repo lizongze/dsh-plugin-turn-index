@@ -9,7 +9,9 @@
 
 它只增强内置索引，不替换索引条本身：原来的小刻度、悬浮预览、当前轮高亮、历史回补逻辑都保持原样。
 
-![dsh-plugin-turn-index-preview](./imgs/dsh-plugin-turn-index-preview.png)
+![preview](./imgs/dsh-plugin-turn-index-preview.png)
+
+![preview-search](./imgs/dsh-plugin-turn-index-preview-search.png)
 
 ## 交互
 
