@@ -9,6 +9,8 @@
 
 它只增强内置索引，不替换索引条本身：原来的小刻度、悬浮预览、当前轮高亮、历史回补逻辑都保持原样。
 
+![dsh-plugin-turn-index-preview](./imgs/dsh-plugin-turn-index-preview.png)
+
 ## 交互
 
 1. 会话右侧出现轮次导航条时，索引条底部会出现一个 `<` 箭头。
